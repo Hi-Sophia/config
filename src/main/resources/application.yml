@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wujuhong/config-repo
+          username: 921761948@qq.com
+          password: wujuhong963
+          basedir: /Users/wujuhong/IdeaProjects/springcloud_sell/config/basedir
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+env: dev
+label: release
